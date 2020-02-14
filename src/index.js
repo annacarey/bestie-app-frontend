@@ -179,7 +179,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         dashboardDiv.style.height = "100vh"
         dashboardDiv.innerHTML = `
         <button id="log-out" class="button">Log Out</button><br>
-        <h1 id="salutation">Hi ${userObject.name}, welcome to Bestie!</h1>
+        <h1 id="salutation">Hi ${userObject.name}, Welcome to Bestie!</h1>
         <div id="notifications"></div>
         <div id="friend-list" class="friends">
         </div>
@@ -242,6 +242,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         if (notificationArray.length > 0) {
             // notificationsDiv.innerHTML = "<p><strong>Notifications:</strong></p>"
+            notificationsDiv.innerHTML = ""
+            notificationsDiv.style.display = "block"
             notificationArray.forEach(notification => {
                 const notificationP = document.createElement("li")
                 notificationP.innerText = notification
@@ -297,6 +299,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             const friendActions = document.getElementById("friend-actions")
             const friendId = fullInfoBox.querySelector("li").id
             const todayDate = new Date().toJSON().slice(0, 10)
+            console.log(friendId)
             fetch(`${friendsURL}/${friendId}`, {
                 method: "PATCH",
                 headers: {
@@ -435,8 +438,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         // friendArray.push(friendObject)
         const friendDiv = document.createElement("div")
         friendDiv.className = "friend-item"
-        friendDiv.innerHTML = `<img class="friend-image" src=${friendObject.image_url}> </img>
-        <h3 class="friend-name" data-id=${friendObject.id}><strong><mark>${friendObject.name}</mark></strong></h3>
+        friendDiv.id = friendObject.id
+        friendDiv.innerHTML = `<img class="friend-image" id=${friendObject.id} src=${friendObject.image_url}> </img>
+        <h3 class="friend-name" id=${friendObject.id} data-id=${friendObject.id}><strong><mark id=${friendObject.id} class="friend-name">${friendObject.name}</mark></strong></h3>
         `
         friendsList.append(friendDiv)
     }
@@ -446,6 +450,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     // Add a new friend functionality
     dashboardDiv.addEventListener("click", e => {
+        console.log(e.target)
         const fullInfoBox = document.getElementById("full-info-display")
         const friendInfo = document.getElementById("friend-info")
         const friendActions = document.getElementById("friend-actions")
@@ -500,12 +505,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 turnPage()
             })
         }
-        if (e.target.className === "friend-item") {
+        console.log(e.target.className)
+        if (e.target.className === "friend-item" || e.target.className === "friend-image" || e.target.className === "friend-name") {
             const newFriendFormDiv = document.getElementById("new-friend-form-div")
             if (newFriendFormDiv) {
                 newFriendFormDiv.innerHTML = ""
             }
-            let id = parseInt(e.target.childNodes[2].dataset.id)
+            let id = parseInt(e.target.id)
             let foundFriend
             friendArray.forEach(friend => {
                 if (friend.id === id) {
