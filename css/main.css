@@ -1,0 +1,290 @@
+body {
+  background: #2CDA9D;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+h1 {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:700;
+}
+
+h3 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+mark {
+  background-color: #AE00FF;
+  color: white;
+}
+
+#login-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 300;
+  background-color: #AE00FF;
+  color: white;
+  border-radius: 20px;
+  border: groove;
+  border-color: #3E28E2;
+}
+
+#sign-in {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  margin: 10px 10px 0 10px;
+  justify-content: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+#sign-in * {
+  margin: 4px;
+}
+
+#signin-form {
+  flex: 1 0 100%;
+}
+
+#login-error {
+  display: flex;
+  order: 3;
+}
+
+#signup-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+input[type=text]{
+  border-radius: 10px;
+  color: white;
+  border-style: groove;
+  color: black;
+  border-color: #3E28E2;
+  padding-left: 6px;
+}
+
+input[type=text]:hover {
+  border: 2px;
+  border-style: groove;
+  border-color: #3E28E2;
+  color: black;
+}
+
+#welcome {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  margin: 8px 15px 15px 20px;
+  justify-content: center;
+}
+
+#no-account {
+  margin: 0 10px 0 10px
+}
+
+.button-link {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
+.button {
+	/* box-shadow: 4px -3px 9px -1px #1e1047; */
+	background:linear-gradient(to bottom, #3E28E2 5%, #6E5FE2 100%);
+  border-radius:14px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	padding: 6px 18px;
+	text-decoration:none;
+}
+
+.button:hover {
+	background:linear-gradient(to bottom, #6E5FE2 5%, #3E28E2 100%);
+	background-color:#6e5fe2;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+#dashboard {
+  display: flex; 
+  flex-flow: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+#notifications {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #AE00FF;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#friend-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.friend-item {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 0px;
+  background: #3E28E2;
+  border-radius: 50%;
+  text-align: right;
+  border: solid transparent 2px;
+  color: #AE00FF;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.friend-item:hover {
+  border: solid 3px #AE00FF;
+}
+
+#back-to-login-button {
+  align-self: flex-start;
+}
+
+#signup-form {
+  width: 100%;
+}
+
+.signup-input {
+  width: 100%;
+}
+
+#priority { 
+  color: black;
+  background-color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.priority-option {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.priority-option:hover {
+  background-color:  black;
+}
+
+#friend-info {
+  list-style: none;
+  background-color:  #AE00FF;
+  color: white;
+  padding: 20px 20px 0px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* .button-signup {
+  background:linear-gradient(to bottom, #3E28E2 5%, #6E5FE2 100%);
+  border-radius:14px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	padding: 6px 18px;
+	text-decoration:none;
+  width: 100%;
+}
+}
+
+.button-signup:hover {
+	background:linear-gradient(to bottom, #6E5FE2 5%, #3E28E2 100%);
+	background-color:#6e5fe2;
+}
+
+.button-signup:active {
+	position:relative;
+	top:1px;
+} */
+
+.friend-image {
+  display: flex;
+  max-height: 100px;
+  align-self: center;
+}
+
+.friend-name {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#text-confirmation {
+  align-self: flex-start;
+}
+
+/* .friend-image {
+  width: 500px;
+  height: 600px;
+} */
+/* 
+#signin-form {
+  border:2px solid #56A089;
+  padding:40px 10px 0px 40px;
+  width:70%;
+  max-width:700px;
+  border-radius:20px;
+} */
+
+
+/* #no-account {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#signup-btn {
+  display: flex;
+  flex-wrap: nowrap;
+} */
+  /* album cover */
+  /* pink: #EEB3D3 */
+  /* blue: #57AEDB */
+  /* yellow: #FFF0C9 */
+  /* dark pink: #A84065 */
+
+  /* video */
+  /* dark green: #2C6145 */
+  /* light green #56A089*/
+  /* dark red #700A17 */
+  /* light red #CD585E */
