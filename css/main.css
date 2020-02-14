@@ -1,5 +1,10 @@
 body {
   background: #2CDA9D;
+  position: flex;
+}
+
+#entire-page {
+  background: #2CDA9D;
   font-family: 'Quicksand', sans-serif;
   color: black;
   height: 100vh;
@@ -27,10 +32,10 @@ mark {
 }
 
 #log-out {
-  margin-top: 15px;
 }
 
 #login-signup {
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +46,7 @@ mark {
   border-radius: 20px;
   border: groove;
   border-color: #3E28E2;
+  width: 500px;
 }
 
 #sign-in {
@@ -59,6 +65,23 @@ mark {
 
 #signin-form {
   flex: 1 0 100%;
+}
+
+#heading {
+  position: absolute;
+  text-align: center;
+  margin-top: 30px;
+  left: -50%;
+  right: -50%;
+}
+
+.heading-mark {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.heading-mark:hover {
+  background-color: white;
+  color: #AE00FF;
 }
 
 #login-error {

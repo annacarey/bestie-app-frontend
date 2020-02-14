@@ -78,6 +78,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         if (document.getElementById("login-error")) {
             document.getElementById("login-error").remove()
         }
+        document.getElementById("heading").style.display = "none"
         signInForm.style.display = "none"
         document.getElementById("no-account").style.display = "none"
         signInDiv.append(signUpButton)
@@ -85,7 +86,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         signUpForm.id = "signup-div"
         signUpForm.innerHTML = `
             <p>Register your new account below: </p>
-            <form id="signup-form">
+            <form autocomplete="off" id="signup-form">
                 <input class="signup-input" type="text" name="name" placeholder="username...">
                 <br>
                 <input class="signup-input" type="text" name="email" placeholder="email...">
@@ -125,7 +126,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         })
         const anotherUserForm = document.createElement("div")
         anotherUserForm.innerHTML = `
-                <form id="signup-form">
+                <form autocomplete="off" id="signup-form">
                     <input type="text" name="name" placeholder="Username...">
                     ${nameError}
                     <br>
@@ -150,6 +151,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // Once a user submits their name, find them in the database
     function login(userObject) {
         let noFriends = false;
+        document.getElementById("heading").style.display = "none";
         fetch(friendsURL)
             .then((response) => {
                 return response.json();
@@ -322,7 +324,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 <li><strong>Phone Number:</strong> ${friendObj.phone_number}</li><br>
                 <li><strong>Last Contacted: </strong> ${friendObj.date_last_outreach.slice(0, 10)} -- Contacted!</li><br>`
                 friendActions.innerHTML = `
-                <form id="datepicker"> 
+                <form autocomplete="off" id="datepicker"> 
                     <input type="date" value="${todayDate}" max="${todayDate}">
                     <input class="button" type="submit" value="Save" >
                 </form>
@@ -358,7 +360,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         // const anotherFriendForm = document.createElement("div")
         // anotherFriendForm.id = "new-friend-form"
         newFriendForm.innerHTML = `
-                <form id="new-friend-form">
+                <form autocomplete="off" id="new-friend-form">
                     <input type="text" name="name" placeholder="Name...">
                     ${nameError}
                     <br>
@@ -461,7 +463,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             if (addFriendToggle) {
                 addFriendDiv = document.getElementById("add-friend-div")
                 newFriendForm.innerHTML = `
-                    <form id="new-friend-form">
+                    <form autocomplete = "off" id="new-friend-form">
                         <input type="text" name="name" placeholder="Name...">
                         <br>
                         <input type="text" name="phone-number" placeholder="Phone number...">
@@ -529,7 +531,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             <li><strong>Phone Number:</strong> ${foundFriend.phone_number}</li><br>
             <li><strong>Last Contacted:</strong> ${displayDate}</li><br>`
             friendActions.innerHTML = `
-            <form id="datepicker"> 
+            <form autocomplete="off" id="datepicker"> 
                 <input type="date" value="${todayDate}" max="${todayDate}">
                 <input class="button" type="submit" value="Save">
             </form>
@@ -558,6 +560,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const backToLoginEventAdder = () => {
         const loginAgain = document.getElementById("back-to-login-button")
         loginAgain.addEventListener("click", function(event){
+            if (document.getElementById("signup-form")) {
+                document.getElementById("signup-form").style.display = "none";
+            }
             backToLogin()
         })
     }
