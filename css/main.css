@@ -26,6 +26,10 @@ mark {
   color: white;
 }
 
+#log-out {
+  margin-top: 15px;
+}
+
 #login-signup {
   display: flex;
   flex-direction: column;
@@ -159,7 +163,7 @@ input[type=text]:hover {
   display: flex;
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: 25px;
   padding: 0px;
   background: #3E28E2;
   border-radius: 50%;
@@ -206,6 +210,10 @@ input[type=text]:hover {
 
 .priority-option:hover {
   background-color:  black;
+}
+
+#add-friend-btn{
+  margin-bottom: 30px;
 }
 
 #friend-info {
@@ -256,6 +264,10 @@ input[type=text]:hover {
 
 #text-confirmation {
   align-self: flex-start;
+}
+
+#delete-button {
+  margin-bottom: 30px;
 }
 
 /* .friend-image {

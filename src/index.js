@@ -186,8 +186,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         <div id="page-btn-div"></div>
         <div id="add-friend-div"><button class="button" id="add-friend-btn">Add New Friend</button></div>
         <div id="full-info-display"><ul id="friend-info"></ul><div id="friend-actions"></div></div>
-        <div id="reminder-div"><button id="text-confirmation" class="button">Remind me via text!</button><br> <div>
         `
+        // <div id="reminder-div"><button id="text-confirmation" class="button">Remind me via text!</button><br> <div>
+
 
         // Get all of the user's friends from the API
         friendsList = document.getElementById("friend-list")
