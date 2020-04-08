@@ -557,6 +557,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         signInDiv.style.display = "block"
         dashboardDiv.style.height = "auto"
         friendArray = []
+        const signInInput = document.getElementById("signin-input")
+        signInInput.value = ""
         document.getElementById("entire-page").style.borderStyle = "solid";
         document.getElementById("heading").style.display = "block";
     }
