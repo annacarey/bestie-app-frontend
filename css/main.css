@@ -21,9 +21,6 @@ body {
   border-color: #AE00FF;
   }
 
-  #entire-page:hover {
-    border-color: white;
-  }
 
 h1 {
     color: black;
@@ -89,10 +86,6 @@ mark {
   font-family: 'Quicksand', sans-serif;
 }
 
-.heading-mark:hover {
-  background-color: white;
-  color: #AE00FF;
-}
 
 #login-error {
   display: flex;
