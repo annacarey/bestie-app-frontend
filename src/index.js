@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     signInDiv.addEventListener("submit", e => {
         e.preventDefault()
-        if (e.target == signInForm) {
+        if (e.target === signInForm) {
             const signInDiv = document.getElementById("sign-in")
             if (signInDiv.lastChild === document.getElementById("login-error")) {
                 signInDiv.removeChild(signInDiv.lastChild)
@@ -543,9 +543,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
             const userId = document.getElementById("dashboard").dataset.id
             console.log(userId)
             fetch(`${friendsURL}/${userId}`)
-            // .then((response) => {
-            //     return response.json()
-            // })
+            .then((response) => {
+                return response.json()
+            })
             .then((myJson) => {
                 console.log(myJson)
             });
