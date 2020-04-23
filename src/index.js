@@ -304,7 +304,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             const friendActions = document.getElementById("friend-actions")
             const friendId = fullInfoBox.querySelector("li").id
             const todayDate = new Date().toJSON().slice(0, 10)
-            console.log(friendId)
             fetch(`${friendsURL}/${friendId}`, {
                 method: "PATCH",
                 headers: {
@@ -455,7 +454,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     // Add a new friend functionality
     dashboardDiv.addEventListener("click", e => {
-        console.log(e.target)
         const fullInfoBox = document.getElementById("full-info-display")
         const friendInfo = document.getElementById("friend-info")
         const friendActions = document.getElementById("friend-actions")
@@ -488,7 +486,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             addFriendToggle = !addFriendToggle
         }
         if (e.target === document.getElementById("delete-button")){
-            console.log("hitting delete")
 
             friendID = parseInt(e.target.parentNode.parentNode.dataset.id)
             fetch(`${friendsURL}/${friendID}`, {
@@ -510,7 +507,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 turnPage()
             })
         }
-        console.log(e.target.className)
         if (e.target.className === "friend-item" || e.target.className === "friend-image" || e.target.className === "friend-name") {
             const newFriendFormDiv = document.getElementById("new-friend-form-div")
             if (newFriendFormDiv) {
@@ -541,14 +537,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
             `
         } if (e.target === document.getElementById("text-confirmation")){
             const userId = document.getElementById("dashboard").dataset.id
-            console.log(userId)
             fetch(`${friendsURL}/${userId}`)
             .then((response) => {
                 return response.json()
             })
-            .then((myJson) => {
-                console.log(myJson)
-            });
         }
     })
 
