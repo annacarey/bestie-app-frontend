@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const friendsURL = "http://localhost:3000/friends"
-    const usersURL = "http://localhost:3000/users"
+    const friendsURL = "https://bestie-api.herokuapp.com/friends"
+    const usersURL = "https://bestie-api.herokuapp.com/users"
 
     //Sign in functionality
     const signInDiv = document.getElementById("login-signup")
