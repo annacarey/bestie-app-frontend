@@ -1,4 +1,4 @@
-# Bestie ![logo](images/icons/apple-touch-icon.png "logo")
+# Bestie ![logo](images/icons/favicon-32x32.png "logo")
 
 Bestie (also known as the Friend CRM) helps you stay in touch with the closest people in your life. CRM stands for customer relationship management tool and this will be familiar to those in sales and marketing, who use these tools to help manage relationships with potential current customers and clients. Similarly, Bestie enables users to manage the relationships with friends and family.
 
@@ -6,25 +6,25 @@ You can find the application live at: http://bestie-app.herokuapp.com/
 
 ## Features
 
-![Homepage Screenshot](images/screenshots/Homepage.png "Homepage")
-
 1. Log in or sign up.
 
-![Dashboard](images/screenshots/Dashboard.png "Dashboard") 
+![Homepage Screenshot](images/screenshots/Homepage.png "Homepage")
 
 2. View your dashboard with friends on your list organized by priority.
 
-![Notifications](images/screenshots/Notifications.png "Notifications")
+![Dashboard](images/screenshots/Dashboard.png "Dashboard") 
 
 3. If it's been longer than 14 days since you reached out to a friend, they will appear in notifications.
 
-![Friend View](images/screenshots/Friend.png "Friend View")
+![Notifications](images/screenshots/Notifications.png "Notifications")
 
 4. You can view each friend's information.
 
-![Contact Feature](images/screenshots/Contact.png "Contact Feature")
+![Friend View](images/screenshots/Friend.png "Friend View")
 
 5. And mark them as contacted using the calendar pop-up.
+
+![Contact Feature](images/screenshots/Contact.png "Contact Feature")
 
 
 ## Contributing
