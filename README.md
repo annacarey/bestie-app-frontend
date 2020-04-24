@@ -6,7 +6,7 @@ Backend repo: https://github.com/annacarey/bestie-app-backend
 
 You can find the application live at: http://bestie-app.herokuapp.com/
 
-## Demo
+## Demo Video
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=DqGg3ela93s
 " target="_blank"><img src="http://img.youtube.com/vi/DqGg3ela93s/0.jpg" 
