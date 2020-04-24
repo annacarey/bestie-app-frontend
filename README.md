@@ -2,6 +2,8 @@
 
 Bestie (also known as the Friend CRM) helps you stay in touch with the closest people in your life. CRM stands for customer relationship management tool and this will be familiar to those in sales and marketing, who use these tools to help manage relationships with potential current customers and clients. Similarly, Bestie enables users to manage the relationships with friends and family.
 
+Backend repo: https://github.com/annacarey/bestie-app-backend
+
 You can find the application live at: http://bestie-app.herokuapp.com/
 
 ## Features
