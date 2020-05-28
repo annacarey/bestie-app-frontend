@@ -39,11 +39,11 @@ alt="Bestie demo video" width="240" height="180" border="10" /></a>
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Contact
-If you want to contact me, you can reach out at anna@annajcarey.com.
+If you want to contact us, you can reach out at anna@annajcarey.com or calvin.baker128@gmail.com.
 
 ## License
 
-Copyright (c) 2020 Anna Carey
+Copyright (c) 2020 Anna Carey & Calvin Baker
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
